@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
           src="https://stunning.so/_next/image?url=%2Fimages%2Fstunning-animated.gif&w=64&q=75"
         />
        <h1 className="text-xl md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-indigo-200 to-purple-300 group-hover:from-indigo-300 group-hover:to-purple-400 transition-all duration-500">
-  <EditableText initialText="Stunning By Amr" disableHoverEffect={true} />
+  <EditableText initialText="Stunning.Amr" disableHoverEffect={true} />
 </h1>
       </div>
 
