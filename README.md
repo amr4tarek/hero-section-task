@@ -4,6 +4,11 @@ A modern, interactive hero section built with React, TypeScript, and Tailwind CS
 
 ---
 
+## 📹 Loom Video
+You can see my Loom video here: [Loom Video](https://www.loom.com/share/b60216f210fe4df2a5c68d1f4faac6ca?sid=28ed31c8-4d97-4dab-9f08-a8c694c9d9d4)
+
+---
+
 ## 🚀 Quick Start
 
 Follow these steps to set up and run the project locally:
@@ -40,12 +45,6 @@ npm run build
 ```
 - Output will be in the `build/` directory
 
-### 5. Run Tests
-Run all unit and integration tests:
-```bash
-npm test
-```
-
 ---
 
 ## 🗂️ Project Structure
@@ -59,6 +58,7 @@ npm test
 ## ⚙️ Configuration
 - **TypeScript:** see `tsconfig.json`
 - **Tailwind CSS:** see `tailwind.config.js` and `postcss.config.js`
+
 
 ---
 
