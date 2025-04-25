@@ -1,0 +1,142 @@
+.neural-network-grid {
+  background-image: 
+    linear-gradient(rgba(123, 97, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(123, 97, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(rgba(123, 97, 255, 0.05) 0.5px, transparent 0.5px),
+    linear-gradient(90deg, rgba(123, 97, 255, 0.05) 0.5px, transparent 0.5px);
+  background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+  width: 100%;
+  height: 100%;
+  animation: gridPulse 10s infinite alternate;
+}
+
+@keyframes gridPulse {
+  0% { opacity: 0.5; }
+  50% { opacity: 0.8; }
+  100% { opacity: 0.3; }
+}
+
+.perspective-container {
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.perspective-container:hover {
+  transform: perspective(1000px) rotateY(15deg) rotateX(5deg);
+}
+
+.animate-spin-slow {
+  animation: spin 4s linear infinite;
+}
+.animate-spin-very-slow {
+  animation: spin 30s linear infinite;
+}
+.animate-pulse-slow {
+  animation: pulse 6s ease-in-out infinite;
+}
+.animate-pulse-slower {
+  animation: pulse 8s ease-in-out 2s infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.7; }
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.scanner-line {
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(90deg, transparent, rgba(64, 226, 255, 0.8), transparent);
+  animation: scan 3s linear infinite;
+  z-index: 5;
+}
+@keyframes scan {
+  0% { top: 0; opacity: 0.5; }
+  25% { opacity: 0.8; }
+  50% { top: 100%; opacity: 0.5; }
+  75% { opacity: 0; }
+  100% { top: 0; opacity: 0.5; }
+}
+
+.enhanced-circuit-lines {
+  background-image: 
+    radial-gradient(circle, transparent 60%, rgba(123, 97, 255, 0.05) 60%, rgba(123, 97, 255, 0.2) 63%, transparent 63%),
+    linear-gradient(to right, rgba(123, 97, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(123, 97, 255, 0.1) 1px, transparent 1px);
+  background-size: 100px 100px, 20px 20px, 20px 20px;
+  animation: circuitFlow 15s linear infinite;
+}
+@keyframes circuitFlow {
+  0% { background-position: 0 0, 0 0, 0 0; }
+  100% { background-position: 100px 100px, 20px 0, 0 20px; }
+}
+
+.enhanced-pulse-animation {
+  animation: enhancedPulse 4s ease infinite;
+}
+@keyframes enhancedPulse {
+  0% { opacity: 0; transform: translateX(-100%); }
+  50% { opacity: 0.4; }
+  100% { opacity: 0; transform: translateX(100%); }
+}
+
+.data-processing-overlay {
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 10px,
+    rgba(64, 226, 255, 0.1) 10px,
+    rgba(64, 226, 255, 0.1) 20px
+  );
+  animation: dataProcess 10s linear infinite;
+}
+@keyframes dataProcess {
+  0% { background-position: 0 0; }
+  100% { background-position: 500px 500px; }
+}
+
+.animate-progress-bar {
+  animation: progressBar 3s ease-in-out infinite;
+}
+@keyframes progressBar {
+  0% { width: 0%; }
+  50% { width: 70%; }
+  70% { width: 60%; }
+  100% { width: 100%; }
+}
+
+.floating-element {
+  animation: float 6s ease-in-out infinite;
+}
+.floating-element-reverse {
+  animation: float 6s ease-in-out infinite reverse;
+}
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.typewriter-text {
+  overflow: hidden;
+  border-right: 2px solid rgba(255, 255, 255, 0.6);
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgba(255, 255, 255, 0.6) }
+}
+
+.hover\:rotate-y-15:hover {
+  transform: rotateY(15deg);
+}
+.hover\:rotate-x-10:hover {
+  transform: rotateX(10deg);
+}

@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Hero Section
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, interactive hero section built with React, TypeScript, and Tailwind CSS.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Quick Start
 
-### `npm start`
+Follow these steps to set up and run the project locally:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. Prerequisites
+- **Node.js** (v16 or later recommended)
+- **npm** (v8 or later)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Check your versions:
+```bash
+node -v
+npm -v
+```
+If you don't have Node.js or npm, download them from [nodejs.org](https://nodejs.org/).
 
-### `npm test`
+### 2. Install Dependencies
+Install all required packages:
+```bash
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 3. Start the Development Server
+Launch the app locally:
+```bash
+npm start
+```
+- The app will open at [http://localhost:3000](http://localhost:3000)
+- Changes in the code will hot-reload automatically
 
-### `npm run build`
+### 4. Build for Production
+Create an optimized production build:
+```bash
+npm run build
+```
+- Output will be in the `build/` directory
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 5. Run Tests
+Run all unit and integration tests:
+```bash
+npm test
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🗂️ Project Structure
+- `src/components/HeroSection/` — Main hero section and background animation
+- `src/components/HeroSection/AINetworkBackground.tsx` — Animated background
+- `src/components/EditableText/` — Editable headline and subtext
+- `src/components/Navbar/` — Navigation bar
+- `src/hooks/useRandomHero.ts` — Custom hook for random hero generation
+- `src/data/` — Sample hero data
 
-### `npm run eject`
+## ⚙️ Configuration
+- **TypeScript:** see `tsconfig.json`
+- **Tailwind CSS:** see `tailwind.config.js` and `postcss.config.js`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 💡 Tips & Troubleshooting
+- If you encounter issues during install, try deleting `node_modules` and `package-lock.json`, then rerun `npm install`.
+- For Tailwind CSS issues, ensure your IDE supports PostCSS and Tailwind plugins.
+- For more help, see the [React documentation](https://react.dev/) and [Tailwind CSS docs](https://tailwindcss.com/docs).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
