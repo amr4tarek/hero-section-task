@@ -2,10 +2,6 @@
 
 A modern, interactive hero section built with React, TypeScript, and Tailwind CSS.
 
----
-
-## 📹 Loom Video
-You can see my Loom video here: [Loom Video](https://www.loom.com/share/b60216f210fe4df2a5c68d1f4faac6ca?sid=28ed31c8-4d97-4dab-9f08-a8c694c9d9d4)
 
 ---
 
